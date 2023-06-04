@@ -26,5 +26,4 @@ now you have global access to the following data:
 
 ``this.$getDistrictByState(state)``- get all districts by state name parameter
 
-``this.$getCitiesByDistrict(disctrict)``- get alls cities by state name parameter
-- 
+``this.$getCitiesByDistrict(disctrict)`` - get alls cities by state name parameter
