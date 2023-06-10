@@ -18516,7 +18516,19 @@ const GermanData = {
         return districts.indexOf(item) == pos;
       })
     }
+    
+    app.config.globalProperties.$getAllDistricts = function () {
+      let districts = [];
 
+      entries.forEach(function (entry) {
+        if(!districts.includes(entry.district)) {
+          districts.push(entry.district)
+        }
+      });
+
+      return districts
+    }
+    
     app.config.globalProperties.$getCitiesByDistrict = function (district) {
       let cities = [];
 
